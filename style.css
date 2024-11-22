@@ -1,0 +1,662 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Inter, sans-serif;
+    color: #fff;
+}
+/********************************************** Header ***********************************************/
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 120px;
+    background-color: #0b9586;
+}
+.main-header .logo img{
+    height: 54px;
+    width: 157px;
+}
+.main-header .main-div ul{
+list-style: none;
+display: flex;
+gap: 10px;
+}
+.main-header .main-div ul a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 8px 28px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.main-header .main-div ul a:hover{
+    border-radius: 5px;
+    border-bottom: 3px solid rgba(51, 25, 25, 0.3);
+    background-color: rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    transform: translateY(-2px);
+}
+.main-header .header-contact{
+    text-align: right;
+}
+.main-header .header-contact span{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 21px;
+}
+.main-header .header-contact p{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+/********************************************** Home ***********************************************/
+.Home-Section{
+    background-image: url(./images/Home.png);
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+    padding: 20px;
+}
+.div-line{
+    position: absolute;
+    top: 55px;
+    left: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.div-line .line{
+    display: flex;
+    flex-direction: row;
+}
+.div-line .line .line-white{
+    width: 89px;
+    background-color: #fff;
+    border: 3.75px solid #fff;
+    margin-left: 65px;
+}
+.div-line .line .line-black{
+    width: 132px;
+    background-color: #575757;
+    border: 3.75px solid #575757;
+    margin-right: 24px;
+}
+.home-content{
+    position: absolute;
+    top: 155px;
+    left: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 729px;
+}
+.home-content h1{
+    font-size: 52px;
+    font-weight: 600;
+    width: 600px;
+}
+.home-content p{
+    font-size: 20px;
+    font-weight: 600;
+    height: 90px;
+}
+.home-content .home-buttons{
+    display: flex;
+    gap: 24px;
+}
+ .btn{
+    padding: 12px 34px;
+    border-radius: 109px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 400;
+}
+ .btn:hover{
+    opacity: 0.8;
+}
+ .btn.call{
+    background-color: #3cab90;
+    color: #fff;
+}
+ .btn.request{
+    background-color: #ffbb1c;
+    color: #2a3334;
+}
+
+/********************************************** Installer ***********************************************/
+.installer-section{
+    background-color: #fff;
+    color: #101828;
+    padding:70px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+}
+.installer-text-content{
+    width: 595px;
+    height: 476px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.installer-text-content h2{
+    font-size: 40px;
+    font-weight: 600;
+    color:#101828;
+}
+.installer-text-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #475467;
+}
+.installer-text-content ul{
+    list-style: none;
+}
+.installer-text-content ul li{
+    font-size: 20px;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: 10px;
+}
+.installer-text-content ul li span{
+    color: #84bd3a;
+    padding-right: 10px;
+}
+.installer-image-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 518px;
+    height: 552px;
+}
+.installer-image-content .main-image{
+    width: 450px;
+    height: 500px;
+}
+.installer-image-content .card-image{
+    position: absolute;
+    top: 305px;
+    right: 215px;
+}
+
+/********************************************** Installer ***********************************************/
+.power-section{
+    background-image: url(./images/power.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position:center;
+    height: 505px;
+}
+.power-section .power-content{
+    position: absolute;
+    padding: 155px 0;
+    left: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 678px;
+    height: 51px;
+}
+.power-section .power-content h2{
+    font-size: 42px;
+    font-weight: 600;
+}
+.power-section .power-content p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+/********************************************** Solar ***********************************************/
+.solar-kits-section{
+    padding: 70px 90px;
+    text-align: center;
+}
+.solar-header{
+    padding: 10px 50px;
+}
+.solar-kits-section h2{
+    font-size: 42px;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: 10px;
+}
+.solar-kits-section p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #475467;
+    margin: 0 auto 30px;
+    width: 800px;
+}
+.solar-kits-section .solar-card-container{
+    display: flex;
+    flex-direction: row;
+    gap:24px;
+}
+.solar-kits-section .solar-card-container .solar-card{
+    background: #fff;
+  width: 330px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.solar-card-container .solar-card:hover {
+  transform: translateY(-5px);
+}
+.solar-kits-section .solar-card-container .solar-card img{
+    width: 100%;
+}
+.solar-card-content{
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    margin: 15px;
+    gap: 15px;
+
+}
+.solar-kits-section .solar-card-container .solar-card .solar-card-content h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #101828;
+}
+.solar-card .solar-card-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #475467;
+    width: 300px;
+}
+.solar-btn{
+    font-size: 16px;
+    font-weight: 600;
+  color: #3cab90;
+  text-decoration: none;
+}
+
+/********************************************** Repairs ***********************************************/
+
+.repairs-section {
+  position: relative;
+  height: 500px;
+  background: url('./images/repairs.png') no-repeat center center/cover; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.overlay-repairs {
+  background: rgba(0, 0, 0, 0.57); 
+  color: #fff;
+  text-align: center;
+  padding: 44px;
+  border-radius: 12px;
+  max-width: 858px;
+  backdrop-filter: blur(24px); 
+  -webkit-backdrop-filter: blur(24px);
+}
+.overlay-repairs h1{
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.overlay-repairs p{
+    padding: 0 30px;
+    font-size: 20px;
+}
+
+/********************************************** Energy ***********************************************/
+.energy-section{
+    background-color: rgba(255, 187, 28, 0.05);
+    color: #101828;
+    padding: 70px 90px;
+    display: flex;
+    gap: 20px;
+}
+.energy-intro{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.energy-cont-icon{
+    background-color:rgba(60, 171, 144, 0.15) ;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.energy-intro .energy-icon{
+    background-color: #3cab90;
+    width: 56px;
+    height: 56px;
+    border: 21px solid rgba(60, 171, 144, 0.15) ;
+    border-radius: 10px;
+    text-align: center;
+    /* box-shadow: 0 0 50px 20px rgba(60, 171, 144, 0.15); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.energy-icon img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    text-align: center;
+}
+.energy-intro h2{
+    font-size: 42px;
+    font-weight: 600;
+    color: #101828;
+}
+.energy-intro p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #474747;
+}
+.energy-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    gap:20px;
+}
+.energy-cards .energy-card{
+    background-color: rgba(60, 171, 144, 0.05);
+    border: 1px solid #3cab90;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    padding: 15px;
+}
+.energy-cards .energy-card:hover{
+    transform: translateY(-5px);
+}
+.energy-cards .energy-card img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.energy-card .energy-card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.energy-card .energy-card-text h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.energy-card .energy-card-text p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.energy-card .energy-card-text a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3cab90;
+}
+
+/********************************************** Values ***********************************************/
+.values-section{
+    color: #101828;
+    padding: 70px 90px;
+}
+.values-intro{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.values-intro h2{
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.values-intro p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.values-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    gap:25px;
+}
+.value-card{
+    background-color: rgba(60, 171, 144, 0.05);
+    border: 1px solid #3cab90;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 370px;
+    width: 320px;
+}
+.value-card:hover{
+    transform: translateY(-5px);
+}
+.value-card img{
+    width: 70px;
+    height: 70px;
+}
+.value-card h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.value-card p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/********************************************** Testimonial ***********************************************/
+.testimonial-section{
+    color: #101828;
+    padding: 70px 90px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.testimonial-intro{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 20px;
+}
+.testimonial-intro img{
+    width: 58px;
+}
+.testimonial-intro h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+.testimonial-intro p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.testimonial-card{
+    width: 700px;
+    background-color: rgba(60, 171, 144, 0.06);
+    border-radius: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-between;
+}
+.testimonal-card-top{
+    display: flex;
+    justify-content: space-between;
+}
+.testimonal-card-top p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #3cab90;
+}
+.testimonal-card-top span{
+    color: #d9d9d9;
+    font-size: 20px;
+    cursor: pointer;
+}
+.testimonal-card-top .dot-black{
+    color: #6b6b6b;
+}
+.testimonial-card .p-card{
+    font-size: 24px;
+    font-weight: 400;
+    width: 516px;
+    margin-bottom: 25px;
+}
+.testimonial-person{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.person-img{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.person-text h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: #1c1c1c;
+}
+.person-text p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #1c1c1c;
+}
+.person-arr{
+    display: flex;
+    gap: 10px;
+}
+.person-arrow{
+    font-size: 20px;
+    border: 1px solid #1c1c1c;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #1c1c1c;
+}
+/********************************************** Footer ***********************************************/
+.footer{
+    background-color: #283646;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 90px ;
+    gap: 40px;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer ul{
+    list-style: none;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-top-left img{
+    width: 185px;
+    height: 64px;
+}
+.footer-links{
+    display: flex;
+    gap: 20px;
+}
+.footer-links li a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.footer-top-rigth{
+    margin-top: auto;
+}
+.footer-top-rigth p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.subscription-form{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #b3bdc7;
+    border-radius: 38px;
+    overflow: hidden;
+}
+.subscription-form input[type="email"]{
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    flex:1;
+    color: #ffffff;
+    background-color: transparent;
+}
+.subscription-form input[type="email"]::placeholder{
+    color: #91989f;
+}
+.subscription-form button{
+    background-color: #ffbb1c;
+    color: #ffffff;
+    padding: 12px 34px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 100px 0 0px 100px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.subscription-form button:hover{
+    opacity: 0.8;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #91989f;
+    font-size: 16px;
+}
+.footer-bottom .links {
+    display: flex;
+    gap: 20px;
+}
+.footer-bottom .links a{
+    color: #91989f;
+    position: relative;
+}
+.footer-bottom .links a:not(:last-child)::after {
+    content: "|";
+    margin-left: 15px;
+}
+.footer-bottom .links a:last-child::after{
+     content: "|";
+    margin-left: 15px;
+}
