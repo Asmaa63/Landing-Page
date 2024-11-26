@@ -1,137 +1,137 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: Inter, sans-serif;
-    color: #fff;
+body {
+  font-family: Inter, sans-serif;
+  color: #fff;
 }
 /********************************************** Header ***********************************************/
 .main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 80px;
-    background-color: #0b9586;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 80px;
+  background-color: #0b9586;
+  position: relative;
 }
 
 .main-header .logo img {
-    height: 54px;
-    width: 157px;
+  height: 54px;
+  width: 157px;
 }
 
 .main-header .main-div ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .main-header .main-div ul.active {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    position: absolute;
-    top: 80px;
-    right: 20px;
-    background-color: #0b9586;
-    padding: 20px;
-    border-radius: 8px;
-    z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background-color: #0b9586;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 100;
 }
 
 .main-header .main-div ul a {
-    font-size: 18px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 400;
-    text-transform: capitalize;
-    padding: 8px 28px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 8px 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .main-header .main-div ul a:hover {
-    border-radius: 5px;
-    border-bottom: 3px solid rgba(51, 25, 25, 0.3);
-    background-color: rgba(0, 0, 0, 0.06);
-    transform: translateY(-2px);
+  border-radius: 5px;
+  border-bottom: 3px solid rgba(51, 25, 25, 0.3);
+  background-color: rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
 }
 
 .main-header .header-contact {
-    text-align: right;
+  text-align: right;
 }
 
 .main-header .header-contact span {
-    font-size: 18px;
-    text-transform: capitalize;
-    font-weight: 400;
-    line-height: 21px;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .main-header .header-contact p {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .burger-menu {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    z-index: 101;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 101;
 }
 
 .burger-menu span {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    transition: all 0.3s ease;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
 }
 
 .burger-menu.open span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .burger-menu.open span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .burger-menu.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 @media (max-width: 1024px) {
-    .main-header {
-        flex-wrap: wrap;
-        padding: 16px 40px;
-    }
+  .main-header {
+    flex-wrap: wrap;
+    padding: 16px 40px;
+  }
 
-    .main-header .main-div ul {
-        display: none;
-    }
+  .main-header .main-div ul {
+    display: none;
+  }
 
-    .main-header .main-div ul.active {
-        display: flex;
-    }
+  .main-header .main-div ul.active {
+    display: flex;
+  }
 
-    .main-header .burger-menu {
-        display: flex;
-    }
+  .main-header .burger-menu {
+    display: flex;
+  }
 
-    .main-header .header-contact {
-        text-align: center;
-        margin-top: 16px;
-    }
+  .main-header .header-contact {
+    text-align: center;
+    margin-top: 16px;
+  }
 }
 /********************************************** Home ***********************************************/
 .Home-Section {
-  background-image: url(./images/Home.png);
+  background-image: url(./images/Home.webp);
   background-repeat: no-repeat;
   position: relative;
   height: 100vh;
@@ -244,14 +244,13 @@ body{
     left: 50px;
     font-size: 16px;
   }
-  .div-line .line .line-white{
+  .div-line .line .line-white {
     margin-left: 30px;
   }
-  .div-line .line .line-black{
+  .div-line .line .line-black {
     margin-right: 16px;
   }
 }
-
 
 @media (max-width: 480px) {
   .home-content {
@@ -273,14 +272,13 @@ body{
     width: 100%;
     text-align: center;
   }
-  .div-line .line .line-white{
+  .div-line .line .line-white {
     width: 50px;
   }
   .div-line .line .line-black {
     width: 70px;
   }
 }
-
 
 /********************************************** Installer ***********************************************/
 .installer-section {
@@ -421,214 +419,214 @@ body{
 
 /********************************************** Power ***********************************************/
 .power-section {
-    background-image: url(./images/power.png);
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 505px;
+  background-image: url(./images/power.webp);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 505px;
 }
 
 .power-section .power-content {
-    position: absolute;
-    padding: 10% 5%;
-    left: 5%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: 90%;
-    max-width: 678px; 
-    height: auto;
+  position: absolute;
+  padding: 10% 5%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 90%;
+  max-width: 678px;
+  height: auto;
 }
 
 .power-section .power-content h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-align: left;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: left;
 }
 
 .power-section .power-content p {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5;
-    text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .power-section .power-content .power-butto {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .power-section .power-content .power-butto .btn {
-    font-size: 1rem;
-    padding: 10px 20px;
-    cursor: pointer;
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
-    .power-section {
-        height: auto;
-        padding: 20px 0;
-    }
+  .power-section {
+    height: auto;
+    padding: 20px 0;
+  }
 
-    .power-section .power-content {
-        position: static;
-        padding: 10%;
-        gap: 12px;
-    }
+  .power-section .power-content {
+    position: static;
+    padding: 10%;
+    gap: 12px;
+  }
 
-    .power-section .power-content h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
+  .power-section .power-content h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-    .power-section .power-content p {
-        font-size: 0.9rem;
-        text-align: center;
-    }
+  .power-section .power-content p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
 
-    .power-section .power-content .power-butto {
-        justify-content: center;
-    }
+  .power-section .power-content .power-butto {
+    justify-content: center;
+  }
 
-    .power-section .power-content .power-butto .btn {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-    }
+  .power-section .power-content .power-butto .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
 }
 
 /********************************************** Solar ***********************************************/
 .solar-kits-section {
-    padding: 5% 8%;
-    text-align: center;
-    justify-content: center;
+  padding: 5% 8%;
+  text-align: center;
+  justify-content: center;
 }
 
 .solar-header {
-    padding: 10px 2%;
+  padding: 10px 2%;
 }
 
 .solar-kits-section h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #101828;
-    margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #101828;
+  margin-bottom: 10px;
 }
 
 .solar-kits-section p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #475467;
-    margin: 0 auto 30px;
-    max-width: 800px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #475467;
+  margin: 0 auto 30px;
+  max-width: 800px;
 }
 
 .solar-kits-section .solar-card-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
 }
 
 .solar-kits-section .solar-card-container .solar-card {
-    background: #fff;
-    width: 100%;
-    max-width: 300px;
-    text-align: left;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  background: #fff;
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .solar-card-container .solar-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .solar-kits-section .solar-card-container .solar-card img {
-    width: 100%;
+  width: 100%;
 }
 
 .solar-card-content {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 15px;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 15px;
+  gap: 15px;
 }
 
 .solar-kits-section .solar-card-container .solar-card .solar-card-content h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #101828;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #101828;
 }
 
 .solar-card .solar-card-content p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #475467;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #475467;
 }
 
 .solar-btn {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #3cab90;
-    text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3cab90;
+  text-decoration: none;
 }
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-    .solar-kits-section {
-        padding: 20px;
-    }
+  .solar-kits-section {
+    padding: 20px;
+  }
 
-    .solar-header {
-        padding: 10px;
-    }
+  .solar-header {
+    padding: 10px;
+  }
 
-    .solar-kits-section h2 {
-        font-size: 2rem;
-    }
+  .solar-kits-section h2 {
+    font-size: 2rem;
+  }
 
-    .solar-kits-section p {
-        font-size: 0.9rem;
-        margin: 0 auto 20px;
-    }
+  .solar-kits-section p {
+    font-size: 0.9rem;
+    margin: 0 auto 20px;
+  }
 
-    .solar-kits-section .solar-card-container {
-        flex-direction: column;
-        gap: 20px;
-        justify-content: center;
-    }
+  .solar-kits-section .solar-card-container {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
 
-    .solar-kits-section .solar-card-container .solar-card {
-        width: 100%;
-    }
+  .solar-kits-section .solar-card-container .solar-card {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .solar-kits-section h2 {
-        font-size: 1.75rem;
-    }
+  .solar-kits-section h2 {
+    font-size: 1.75rem;
+  }
 
-    .solar-kits-section p {
-        font-size: 0.8rem;
-    }
+  .solar-kits-section p {
+    font-size: 0.8rem;
+  }
 
-    .solar-card .solar-card-content p {
-        font-size: 0.9rem;
-    }
+  .solar-card .solar-card-content p {
+    font-size: 0.9rem;
+  }
 
-    .solar-btn {
-        font-size: 0.9rem;
-    }
+  .solar-btn {
+    font-size: 0.9rem;
+  }
 }
 
 /********************************************** Repairs ***********************************************/
 .repairs-section {
   position: relative;
   height: 500px;
-  background: url('./images/repairs.png') no-repeat center center / cover;
+  background: url("./images/repairs.webp") no-repeat center center / cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1123,7 +1121,6 @@ body{
   color: #1c1c1c;
 }
 
-
 @media (max-width: 1024px) {
   .testimonial-section {
     flex-direction: column;
@@ -1219,207 +1216,207 @@ body{
 }
 
 /********************************************** Footer ***********************************************/
-.footer{
-    background-color: #283646;
-    display: flex;
-    flex-direction: column;
-    padding: 70px 90px ;
-    gap: 40px;
+.footer {
+  background-color: #283646;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 90px;
+  gap: 40px;
 }
-.footer a{
-    text-decoration: none;
+.footer a {
+  text-decoration: none;
 }
-.footer ul{
-    list-style: none;
+.footer ul {
+  list-style: none;
 }
-.footer-top{
-    display: flex;
-    justify-content: space-between;
+.footer-top {
+  display: flex;
+  justify-content: space-between;
 }
-.footer-top-left{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.footer-top-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.footer-top-left img{
-    width: 185px;
-    height: 64px;
+.footer-top-left img {
+  width: 185px;
+  height: 64px;
 }
-.footer-links{
-    display: flex;
-    gap: 20px;
+.footer-links {
+  display: flex;
+  gap: 20px;
 }
-.footer-links li a{
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
+.footer-links li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
 }
-.footer-top-rigth{
-    margin-top: auto;
+.footer-top-rigth {
+  margin-top: auto;
 }
-.footer-top-rigth p{
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 10px;
+.footer-top-rigth p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
-.subscription-form{
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    border: 1px solid #b3bdc7;
-    border-radius: 38px;
-    overflow: hidden;
+.subscription-form {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #b3bdc7;
+  border-radius: 38px;
+  overflow: hidden;
 }
-.subscription-form input[type="email"]{
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    font-weight: 400;
-    outline: none;
-    flex:1;
-    color: #ffffff;
-    background-color: transparent;
+.subscription-form input[type="email"] {
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  flex: 1;
+  color: #ffffff;
+  background-color: transparent;
 }
-.subscription-form input[type="email"]::placeholder{
-    color: #91989f;
+.subscription-form input[type="email"]::placeholder {
+  color: #91989f;
 }
-.subscription-form button{
-    background-color: #ffbb1c;
-    color: #ffffff;
-    padding: 12px 34px;
-    border: none;
-    font-size: 16px;
-    font-weight: 400;
-    border-radius: 100px 0 0px 100px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+.subscription-form button {
+  background-color: #ffbb1c;
+  color: #ffffff;
+  padding: 12px 34px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 100px 0 0px 100px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
-.subscription-form button:hover{
-    opacity: 0.8;
+.subscription-form button:hover {
+  opacity: 0.8;
 }
-.footer-bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #91989f;
-    font-size: 16px;
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #91989f;
+  font-size: 16px;
 }
 .footer-bottom .links {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
-.footer-bottom .links a{
-    color: #91989f;
-    position: relative;
+.footer-bottom .links a {
+  color: #91989f;
+  position: relative;
 }
 .footer-bottom .links a:not(:last-child)::after {
-    content: "|";
-    margin-left: 15px;
+  content: "|";
+  margin-left: 15px;
 }
-.footer-bottom .links a:last-child::after{
-     content: "|";
-    margin-left: 15px;
+.footer-bottom .links a:last-child::after {
+  content: "|";
+  margin-left: 15px;
 }
 
 @media (max-width: 1024px) {
-    .footer {
-        padding: 50px 30px;
-        gap: 30px;
-    }
-    .footer-top {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .footer-top-left img {
-        width: 150px;
-        height: auto;
-    }
-    .footer-links {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .footer-top-rigth p {
-        font-size: 14px;
-    }
-    .subscription-form input[type="email"] {
-        font-size: 14px;
-    }
-    .subscription-form button {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-    .footer-bottom {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-    .footer-bottom .links {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
+  .footer {
+    padding: 50px 30px;
+    gap: 30px;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-top-left img {
+    width: 150px;
+    height: auto;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .footer-top-rigth p {
+    font-size: 14px;
+  }
+  .subscription-form input[type="email"] {
+    font-size: 14px;
+  }
+  .subscription-form button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .footer-bottom .links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 768px) {
-    .footer {
-        padding: 30px 20px;
-    }
-    .footer-links li a {
-        font-size: 14px;
-    }
-    .footer-top-rigth p {
-        font-size: 12px;
-    }
-    .subscription-form input[type="email"] {
-        font-size: 12px;
-        padding: 8px 10px;
-    }
-    .subscription-form button {
-        padding: 8px 16px;
-        font-size: 12px;
-    }
-    .footer-bottom {
-        gap: 10px;
-        font-size: 14px;
-    }
-    .footer-bottom .links a {
-        font-size: 14px;
-    }
+  .footer {
+    padding: 30px 20px;
+  }
+  .footer-links li a {
+    font-size: 14px;
+  }
+  .footer-top-rigth p {
+    font-size: 12px;
+  }
+  .subscription-form input[type="email"] {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+  .subscription-form button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+  .footer-bottom {
+    gap: 10px;
+    font-size: 14px;
+  }
+  .footer-bottom .links a {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
-    .footer {
-        gap: 20px;
-    }
-    .footer-top-left{
-      justify-content: center;
-      align-items: center;
-    }
-    .footer-top-left img {
-        width: 120px;
-    }
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .footer-links li {
-        margin-bottom: 5px;
-    }
-    .subscription-form {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .subscription-form input[type="email"],
-    .subscription-form button {
-        width: 100%;
-        text-align: center;
-    }
-    .footer-bottom {
-        gap: 10px;
-        font-size: 12px;
-    }
-    .footer-bottom .links a {
-        font-size: 12px;
-    }
+  .footer {
+    gap: 20px;
+  }
+  .footer-top-left {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-top-left img {
+    width: 120px;
+  }
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-links li {
+    margin-bottom: 5px;
+  }
+  .subscription-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .subscription-form input[type="email"],
+  .subscription-form button {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-bottom {
+    gap: 10px;
+    font-size: 12px;
+  }
+  .footer-bottom .links a {
+    font-size: 12px;
+  }
 }
